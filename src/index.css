@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-yellow-400 w-full p-3 text-xs xl:text-sm rounded hover:bg-yellow-500 mt-3;
+  }
+}
+#top{
+  overflow: hidden;
+}
+.backtotopbar{
+  background-color: rgb(94, 94, 116);
+}
+.allnav{
+  width: 80px;
+}
+
+.aspect-w-2 {
+  width: 100%;
+  max-width: 600px;
+}
+
+.aspect-h-1 {
+  padding-bottom: 50%; 
+}
+
+.product_details{
+  display: flex;
+}
+/* Responsive styles */
+@media screen and (max-width: 640px) {
+  .text-lg {
+    font-size: 16px;
+  }
+  
+  .text-xs {
+    font-size: 12px;
+  }
+
+  .aspect-w-2 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper-slide {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-xl {
+    font-size: 16px;
+  }
+  .text-base {
+    font-size: 12px;
+  }
+  .text-xs {
+    font-size: 10px;
+  }
+  .font-bold {
+    font-weight: bold;
+  }
+}
+
+.img-indialogo {
+  height: 30px;
+}
+
+.select-language {
+  font-size: 12px;
+  background-color: #3071a9;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1023px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hide-on-phone {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .xl\\:hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .carousel-slide {
+    width: 50%;
+   }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .carousel-slide {
+    width: 33.3333%; 
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-slide {
+    width: 14.2857%; 
+  }
+}
